@@ -1,0 +1,12 @@
+@import url("../css/variaveis.css");
+
+.background {
+    background-color: var(--azul-principal);
+    background-image: url("../img/forma_1.svg"), url("../img/forma_2.svg");
+    background-repeat: no-repeat;
+    background-position: top left, 100% 40%;
+}
+
+.container {
+    padding: 3rem 3rem 0 3rem;
+}

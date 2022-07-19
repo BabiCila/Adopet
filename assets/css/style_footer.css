@@ -1,0 +1,12 @@
+@import url("../css/variaveis.css");
+
+.footer {
+    background-color: var(--verde-footer);
+    font-size: 16px;
+    padding: 2.5rem 0;
+}
+
+.texto__rodape {
+    color: var(--branco-secundario);
+
+}
