@@ -18,3 +18,10 @@
     color: var(--branco-secundario);
     font-size: 16px;
 }
+
+.img__pets {
+    width: 220px;
+    height: 300px;
+    align-self: center;
+    margin-bottom: -2em;
+}

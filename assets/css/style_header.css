@@ -2,7 +2,8 @@
 
 .background {
     background-color: var(--azul-principal);
-    background-image: url("../img/forma_1.svg"), url("../img/forma_2.svg");
+    background-image: url("../img/forma_1.svg"), 
+        url("../img/forma_2.svg");
     background-repeat: no-repeat;
     background-position: top left, 100% 40%;
 }

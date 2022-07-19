@@ -2,11 +2,10 @@
 
 .footer {
     background-color: var(--verde-footer);
-    font-size: 16px;
-    padding: 2.5rem 0;
+    font-size: 1em;
+    padding: 3em 0;
 }
 
 .texto__rodape {
     color: var(--branco-secundario);
-
 }
