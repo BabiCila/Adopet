@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html language="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adopet - Cadastro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/variaveis.css">
+        <link rel="stylesheet" href="assets/css/style_padrao.css">
+        <link rel="stylesheet" href="assets/css/style_footer.css">
+
+    </head>     
+    <body>
+        <div class="background">
+            <header class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/casa.png" alt="icone de casa">
+                </a>
+                <a class="navbar-brand ms-5" href="#">
+                    <img src="assets/img/mensagens.png" alt="icone de carta">
+                </a>
+            </header>
+            <main class="container d-flex flex-column justify-content-center overflow-hidden">
+                <img src="assets/img/logoazul.png" class="d-block m-auto pt-5">
+                <h3 class="texto__cadastro p-3 text-center">Ainda não tem cadastro?<br><br>
+                    Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</h3>
+                
+                <div class="mb-1">
+                    <div>
+                        <h5 class="label text-center">E-mail</h5>
+                        <input type="email" class="form-control mb-4 shadow-sm" id="exampleFormControlInput1" placeholder="Escolha seu melhor e-mail">
+                    </div>    
+                    <div>
+                        <h5 class="label text-center">Nome</h5>
+                        <input type="text" class="form-control mb-4 shadow-sm" id="exampleFormControlInput1" placeholder="Digite seu nome completo">
+                    </div>    
+                    <div>
+                        <h5 class="label text-center">Senha</h5>
+                        <input type="password" class="input__senha form-control mb-4 shadow-sm" id="inputPassword" placeholder="Crie uma senha">  
+                    </div>
+                    <div>
+                        <h5 class="label text-center">Confirma sua senha</h5>
+                        <input type="password" class="input__senha form-control shadow-sm" id="inputPassword" placeholder="Repita a senha criada acima"> 
+                    </div>
+                    <div class="d-grid gap-2 col-8 mx-auto">
+                        <button type="button" class="btn text-light w-75 shadow m-4 mb-5  botao__cadastro">Cadastrar</button>
+                    </div>   
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="texto__rodape text-light text-center">
+                <span>2022 - Desenvolvido por Barbara Meira</span>
+            </div>     
+        </footer>
+    </body>
+</html>

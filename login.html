@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Adopet</title>
+        <title>Adopet - Cadastro</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/variaveis.css">
-        <link rel="stylesheet" href="assets/css/style_inicial.css">
+        <link rel="stylesheet" href="assets/css/style_padrao.css">
         <link rel="stylesheet" href="assets/css/style_footer.css">
 
     </head>     
@@ -22,14 +22,25 @@
                 <a class="navbar-brand ms-5" href="#">
                     <img src="assets/img/mensagens.png" alt="icone de carta">
                 </a>
-                <img src="assets/img/logoclaro.png" class="d-block m-auto pt-5 mt-5">
             </header>
             <main class="container d-flex flex-column justify-content-center overflow-hidden">
-                <h1 class="titulo__inicial text-light text-center">Boas-vindas</h1>
-                <h3 class="texto__inicial lh-base p-4 text-light text-center">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</h3>
-                <button type="button" class="btn align-self-center w-75 shadow botao__inicial mb-3">Já tenho conta</button>
-                <button type="button" class="btn align-self-center w-75 shadow botao__inicial">Quero me cadastrar</button>
-                <img src="./assets/img/ilustração_1.svg" class="img__pets">
+                <img src="assets/img/logoazul.png" class="d-block mt-3 mb-5 m-auto pt-5">
+                <h3 class="texto__cadastro p-3 mt-2 text-center">Já tem conta? Faça seu login:</h3>
+                
+                <div class="mt-1 mb-3 pb-5">
+                    <div>
+                        <h5 class="label text-center mt-3">E-mail</h5>
+                        <input type="email" class="form-control mb-4 shadow-sm" id="exampleFormControlInput1" placeholder="Escolha seu melhor e-mail">
+                    </div>       
+                    <div>
+                        <h5 class="label text-center">Senha</h5>
+                        <input type="password" class="input__senha form-control  mb-4 shadow-sm" id="inputPassword" placeholder="Crie uma senha">  
+                    </div>
+                    <div class="d-grid gap-2 col-8 mx-auto mb-5">
+                        <a class="lembrar__senha text-center">Esqueci minha senha</a>
+                        <button type="button" class="btn text-light w-75 shadow ms-4 mt-3 mb-5 botao__cadastro">Entrar</button>
+                    </div>  
+                </div>
             </main>
         </div>
         <footer class="footer">

@@ -1,5 +1,18 @@
 @import url("../css/variaveis.css");
 
+.background {
+    background-color: var(--azul-principal);
+    background-image: url("../img/forma_1.svg"), 
+        url("../img/forma_2.svg");
+    background-repeat: no-repeat;
+    background-position: top left, 100% 50%;
+    background-size: 100%, 18%;
+}
+
+.container {
+    padding: 3rem 3rem 0 3rem;
+}
+
 .titulo__inicial {
     font-family: var(--fonte-secundaria);
     font-size: 26px;
@@ -9,8 +22,7 @@
 .texto__inicial {
     font-family: var(--fonte-principal);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    font-weight: 400; 
 }
 
 .botao__inicial {
