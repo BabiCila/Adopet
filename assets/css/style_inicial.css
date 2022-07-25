@@ -32,3 +32,21 @@
     background-color: var(--goiaba-botao);
     font-family: var(--fonte-principal);
 }
+
+@media (min-width: 768px) {
+    .background {
+        background-size: 70%, 14%;
+    }
+
+    .logo__claro {
+        width: 250px;
+    }
+
+    .img__pets {
+        width: 350px;
+    }
+
+    .logo__nav {
+        height: 30px;
+    }
+}

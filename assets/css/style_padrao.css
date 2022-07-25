@@ -44,7 +44,7 @@
 
 .botao__cadastro {
     background-color: var(--goiaba-botao);
-    font-weight: 600;
+    font-family: var(--fonte-principal);
 }
 
 .lembrar__senha {

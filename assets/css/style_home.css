@@ -1,0 +1,34 @@
+@import url("../css/variaveis.css");
+
+.background {
+    background-color: var(--branco-secundario);
+    background-image: url("../img/forma_1.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+}
+
+.container {
+    padding: 0;
+}
+
+.texto__home {
+    color: var(--azul-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+}
+
+.card__animais {
+    background-color: var(--cinza-input);
+}
+
+.card__nome,
+.card__descricao,
+.card__local {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-secundario);
+}
+
+.card__nome {
+    color: var(--azul-principal);
+}
