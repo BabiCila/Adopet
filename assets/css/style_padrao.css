@@ -1,12 +1,16 @@
 @import url("../variaveis.css");
 
+:root {
+    font-size: 16px;
+}
+
 .background {
     background-color: var(--branco-secundario);
     background-image: url("../img/Patas.svg"), url("../img/forma_1.svg"), 
         url("../img/forma_3.svg");
     background-repeat: no-repeat;
-    background-position: top right, top left, 0 90%;
-    background-size: 40%, 100%, 20%;
+    background-position: top right, top left, 0 92%;
+    background-size: 40%, 98%, 18%;
 }
 
 .container {
@@ -15,14 +19,19 @@
 
 .texto__cadastro {
     color: var(--azul-principal);
-    font-size: 1em;
+    font-size: 1rem;
     font-family: var(--fonte-principal);
 }
 
 .label {
     color: var(--cinza-secundario);
-    font-size: 1em;
+    font-size: 1rem;
     font-family: var(--fonte-principal);
+}
+
+.form__cadastro,
+.input__senha {
+    width: 22rem;
 }
 
 .form-control {
@@ -31,7 +40,7 @@
 
 ::placeholder {
     color: var(--cinza-placeholder) !important;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-family: var(--fonte-principal);
     text-align: center;
 }
@@ -42,13 +51,80 @@
     background-position: 95% 50%;
 }
 
-.botao__cadastro {
+.btn__padrao,
+.btn__padrao_lg {
     background-color: var(--goiaba-botao);
     font-family: var(--fonte-principal);
+    width: 10rem;
+}
+
+.btn__padrao_lg {
+    display: none;
 }
 
 .lembrar__senha {
     color: var(--goiaba-botao);
     font-family: var(--fonte-principal);
-    font-size: 0.8em;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+
+    :root {
+        font-size: 18px;
+    }
+
+    .background {
+        background-image: url("../img/Patas.svg"), url("../img/forma_2.1.svg"),
+        url("../img/forma_1.svg");
+        background-position: top right, 100% 15rem, top left;
+        background-size: 25%, 15%, 65%;   
+    }
+
+    .logo__azul {
+        width: 13rem;
+    }
+
+    .form__cadastro,
+    .input__senha {
+        width: 20rem;
+    }
+
+    .lembrar__senha {
+        display: none;
+    }
+
+    .btn__padrao_lg {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        font-size: 18px;
+    }
+
+    .background {
+        background-image: url("../img/Patas.svg"), url("../img/forma_2.1.svg"),
+        url("../img/forma_1.svg");
+        background-position: top right, 100% 8rem, top left;
+        background-size: 10%, 7%, 40%;   
+    }
+
+    .form__cadastro {
+        width: 30rem;
+    }
+
+    .lembrar__senha {
+        display: none;
+    }
+    
+    .btn__padrao {
+        display: none;
+    }
+
+    .btn__padrao_lg {
+        display: inline-block;
+        width: 11rem;
+    }
 }

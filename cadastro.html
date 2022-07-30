@@ -16,6 +16,7 @@
     <body>
         <div class="background">
             <header class="container">
+                <img src="./assets/img/logo_branco-pq.svg" class="logo__nav d-none d-md-inline-block me-md-5">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/casa.png" alt="icone de casa">
                 </a>
@@ -24,29 +25,29 @@
                 </a>
             </header>
             <main class="container d-flex flex-column justify-content-center overflow-hidden">
-                <img src="assets/img/logoazul.png" class="d-block m-auto pt-5">
-                <h3 class="texto__cadastro p-3 text-center">Ainda não tem cadastro?<br><br>
-                    Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</h3>
-                
-                <div class="mb-1">
+                <img src="assets/img/logoazul.png" class="d-block m-auto pt-5 mt-md-3 logo__azul">
+                <h3 class="texto__cadastro pt-3 pb-1 mt-3 mb-0 text-center">Ainda não tem cadastro?</h3>
+                <h3 class="texto__cadastro pt-1 pb-3 p-md-3 mt-md-0 m-md-4 text-center">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</h3>
+                <div class="mb-1 mt-2 d-flex flex-column align-items-center">
                     <div>
                         <h5 class="label text-center">E-mail</h5>
-                        <input type="email" class="form-control mb-4 shadow-sm" id="exampleFormControlInput1" placeholder="Escolha seu melhor e-mail">
+                        <input type="email" class="form-control mb-4 mb-md-3 shadow-sm form__cadastro" id="exampleFormControlInput1" placeholder="Escolha seu melhor e-mail">
                     </div>    
                     <div>
                         <h5 class="label text-center">Nome</h5>
-                        <input type="text" class="form-control mb-4 shadow-sm" id="exampleFormControlInput1" placeholder="Digite seu nome completo">
+                        <input type="text" class="form-control mb-4 mb-md-3 shadow-sm form__cadastro" id="exampleFormControlInput1" placeholder="Digite seu nome completo">
                     </div>    
                     <div>
                         <h5 class="label text-center">Senha</h5>
-                        <input type="password" class="input__senha form-control mb-4 shadow-sm" id="inputPassword" placeholder="Crie uma senha">  
+                        <input type="password" class=" form-control mb-4 mb-md-3 shadow-sm input__senha" id="inputPassword" placeholder="Crie uma senha">  
                     </div>
                     <div>
                         <h5 class="label text-center">Confirma sua senha</h5>
-                        <input type="password" class="input__senha form-control shadow-sm" id="inputPassword" placeholder="Repita a senha criada acima"> 
+                        <input type="password" class=" form-control mb-md-3 shadow-sm input__senha" id="inputPassword" placeholder="Repita a senha criada acima"> 
                     </div>
-                    <div class="d-grid gap-2 col-8 mx-auto">
-                        <button type="button" class="btn botao__cadastro text-light fw-bold w-75 shadow m-4 mb-5">Cadastrar</button>
+                    <div class="d-grid gap-2 col-8 col-md-5 col-lg-3 mx-auto mb-md-3 mt-md-3">
+                        <button type="button" class="btn btn__padrao text-light fw-bold shadow m-4 mb-5">Cadastrar</button>
+                        <button type="button" class="btn btn__padrao_lg text-light fw-bold shadow m-4 mb-5 ms-5">Cadastrar!</button>
                     </div>   
                 </div>
             </main>

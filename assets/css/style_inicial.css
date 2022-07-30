@@ -1,5 +1,9 @@
 @import url("../css/variaveis.css");
 
+:root {
+    font-size: 16px;
+}
+
 .background {
     background-color: var(--azul-principal);
     background-image: url("../img/forma_1.svg"), 
@@ -19,27 +23,49 @@
 
 .texto__inicial {
     font-family: var(--fonte-principal);
+    font-size: 1rem;
 }
+
+.texto__inicialmd {
+    display: none;
+}
+
 
 .img__pets {
     width: 220px;
     height: 300px;
     align-self: center;
-    margin-bottom: -2em;
+    margin-bottom: -2rem;
 }
 
-.btn__login {
+.btn__padrao {
     background-color: var(--goiaba-botao);
     font-family: var(--fonte-principal);
+    width: 12rem;
 }
 
 @media (min-width: 768px) {
+
+    :root {
+        font-size: 18px;
+    }
+
     .background {
         background-size: 70%, 14%;
     }
 
     .logo__claro {
-        width: 250px;
+        width: 16rem;
+    }
+    
+    .texto__inicial {
+        display: none;
+    }
+
+    .texto__inicialmd {
+        display: inline;
+        font-family: var(--fonte-principal);
+        font-size: 18px;
     }
 
     .img__pets {
@@ -49,4 +75,35 @@
     .logo__nav {
         height: 30px;
     }
+
+    .btn__padrao {
+        width: 22rem;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .background {
+        background-size: 40%, 7%;
+    }
+
+    .logo__claro {
+        width: 260px;
+    }
+    
+    .btn__padrao {
+        width: 23rem;
+    }
+
+    .texto__inicial {
+        display: none;
+    }
+
+    .texto__inicialmd {
+        display: inline-block;
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        padding: 0 20rem !important;
+    }
+    
 }

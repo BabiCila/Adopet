@@ -18,7 +18,7 @@
     font-size: 1em;
 }
 
-.card__animais {
+.card__bg {
     background-color: var(--cinza-input);
 }
 
@@ -31,4 +31,24 @@
 
 .card__nome {
     color: var(--azul-principal);
+    font-weight: 600;
+}
+
+::placeholder {
+    color: var(--cinza-placeholder) !important;
+    font-family: var(--fonte-principal);
+    font-size: 0.8em;
+}
+
+.btn__padrao {
+    background-color: var(--goiaba-botao);
+    font-family: var(--fonte-principal);
+}
+
+.perfil__title {
+    color: var(--cinza-secundario);
+}
+
+.img__perfil {
+    margin: 0 40px 0 100px;
 }

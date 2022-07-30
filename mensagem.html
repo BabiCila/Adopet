@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html language="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adopet - Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/variaveis.css">
+        <link rel="stylesheet" href="assets/css/style_home.css">
+        <link rel="stylesheet" href="assets/css/style_footer.css">
+
+    </head>     
+    <body>
+        <div class="background">
+            <header class="container d-flex p-4">
+                <a class="navbar-brand p-3" href="#">
+                    <img src="assets/img/casa.png" alt="icone de casa">
+                </a>
+                <a class="navbar-brand p-3 ms-4" href="#">
+                    <img src="assets/img/mensagens.png" alt="icone de carta">
+                </a>
+                <a class="navbar-brand ms-auto m-2" href="#">
+                    <img src="assets/img/usuario.svg" alt="icone de usuario">
+                </a>
+            </header>
+            <main class="container d-flex mt-3 flex-column justify-content-center overflow-hidden">
+                <div class="p-3">
+                    <h3 class="texto__home p-5 pb-2 m-0 fs-6 text-center">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</h3>
+                </div>
+                <div class="align-self-center m-3 card__bg rounded" style="width: 18rem;">
+                  <div class="m-3">
+                    
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label card__nome">Nome</label>
+                      <input type="text" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="Insira seu nome completo">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label card__nome">Telefone</label>
+                      <input type="number" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="Insira seu telefone e/ou whatsapp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label card__nome">Nome do animal</label>
+                      <input type="text" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="Por qual animal você se interessou?">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label card__nome">Mensagem</label>
+                      <textarea class="form-control shadow-sm" id="exampleFormControlTextarea1" placeholder="Escreva sua mensagem." rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn text-light w-75 shadow ms-4 mt-3 btn__padrao">Enviar</button>
+
+                  </div>
+                </div>
+
+                  
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="texto__rodape text-light text-center">
+                <span>2022 - Desenvolvido por Barbara Meira</span>
+            </div>     
+        </footer>
+    </body>
+</html>
