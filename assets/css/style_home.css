@@ -20,6 +20,7 @@
 
 .card__bg {
     background-color: var(--cinza-input);
+    max-width: 540px !important;
 }
 
 .card__nome,
@@ -32,6 +33,17 @@
 .card__nome {
     color: var(--azul-principal);
     font-weight: 600;
+}
+
+.card__local {
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+}
+
+.card__msg {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-secundario);
+    font-size: 10px;
 }
 
 ::placeholder {
@@ -51,4 +63,46 @@
 
 .img__perfil {
     margin: 0 40px 0 100px;
+}
+
+@media (min-width: 768px) {
+
+    .background {
+        background-image: url("../img/forma_1.svg");
+        background-position: top left;
+        background-size: 65%;   
+    }
+
+    .texto__home {
+        font-size: 18px;
+    }
+
+    .card__bg {
+        max-width: 363px !important;
+    }
+
+    .card__nome {
+        font-size: 16px;
+        font-family: var(--fonte-principal);
+    }
+
+    .card__descricao {
+        font-size: 14px;
+        font-family: var(--fonte-principal);
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .background {
+        background-image: url("../img/forma_1.svg"), url("../img/forma_2.1.svg");
+        background-position: top left, 100% 15rem;
+        background-size: 40%, 8%;
+    }
+
+    .card__bg {
+        max-width: 384px !important;
+    }
+
 }
