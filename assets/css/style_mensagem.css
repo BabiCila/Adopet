@@ -17,49 +17,21 @@
     max-width: 540px !important;
 }
 
-.card__nome,
-.card__descricao,
-.card__local {
-    font-family: var(--fonte-principal);
-    color: var(--cinza-secundario);
-}
-
-.card__nome {
-    color: var(--azul-principal);
-    font-weight: 600;
-}
-
-.card__local {
-    font-family: var(--fonte-principal);
-    font-size: 12px;
-}
-
-.card__msg {
-    font-family: var(--fonte-principal);
-    color: var(--cinza-secundario);
-    font-size: 10px;
-}
-
-
 @media (min-width: 768px) {
 
     .background {
-        background-image: url("../img/forma_1.svg");
-        background-position: top left;
-        background-size: 65%;   
+        background-image: url("../img/forma_1.svg"),
+        url("../img/forma_2.1.svg");
+        background-position: top left, 100% 15rem;
+        background-size: 65%, 15%;   
     }
 
     .card__bg {
-        max-width: 363px !important;
+        min-width: 510px;
     }
 
     .card__nome {
         font-size: 16px;
-        font-family: var(--fonte-principal);
-    }
-
-    .card__descricao {
-        font-size: 14px;
         font-family: var(--fonte-principal);
     }
 

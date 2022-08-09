@@ -1,0 +1,75 @@
+@import url("../css/variaveis.css");
+
+.background {
+    background-color: var(--branco-secundario);
+    background-image: url("../img/forma_1.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+}
+
+.container {
+    padding: 0;
+}
+
+.perfil__title {
+    color: var(--cinza-secundario);
+}
+
+.img__perfil {
+    margin: 0 3.1rem 0 6.5rem;
+    align-items: center;
+}
+
+.img__perfil_nav {
+    margin: 0 3rem 0 10rem;
+    width: 40px;
+    height: 40px;
+}
+
+.alterar__foto {
+    font-family: var(--fonte-principal);
+    font-size: 0.8rem;
+    color: var(--goiaba-botao);
+}
+
+@media (min-width: 768px) {
+
+    .background {
+        background-image: url("../img/forma_1.svg"),
+        url("../img/forma_2.1.svg");
+        background-position: top left, 100% 15rem;
+        background-size: 65%, 15%;   
+    }
+
+    .img__perfil {
+        margin: 0 11.5rem 0 11.5rem;
+        align-items: center;
+    }
+
+    .img__perfil_nav {
+        margin: 0 3rem 0 10rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .card__bg {
+        min-width: 510px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+    .background {
+        background-image: url("../img/forma_1.svg"), url("../img/forma_2.1.svg");
+        background-position: top left, 100% 15rem;
+        background-size: 40%, 8%;
+    }
+
+    .card__bg {
+        max-width: 384px !important;
+    }
+
+}

@@ -17,12 +17,6 @@
     padding: 3rem 3rem 0 3rem;
 }
 
-.texto__cadastro {
-    color: var(--azul-principal);
-    font-size: 1rem;
-    font-family: var(--fonte-principal);
-}
-
 .label {
     color: var(--cinza-secundario);
     font-size: 1rem;
@@ -38,28 +32,10 @@
     background-color: var(--cinza-input);
 }
 
-::placeholder {
-    color: var(--cinza-placeholder) !important;
-    font-size: 0.8rem;
-    font-family: var(--fonte-principal);
-    text-align: center;
-}
-
 .input__senha {
     background-image: url("../img/Vector.svg");
     background-repeat: no-repeat;
     background-position: 95% 50%;
-}
-
-.btn__padrao,
-.btn__padrao_lg {
-    background-color: var(--goiaba-botao);
-    font-family: var(--fonte-principal);
-    width: 10rem;
-}
-
-.btn__padrao_lg {
-    display: none;
 }
 
 .lembrar__senha {
@@ -125,6 +101,6 @@
 
     .btn__padrao_lg {
         display: inline-block;
-        width: 11rem;
+        width: 10rem;
     }
 }

@@ -38,11 +38,6 @@
     margin-bottom: -2rem;
 }
 
-.btn__padrao {
-    background-color: var(--goiaba-botao);
-    font-family: var(--fonte-principal);
-    width: 12rem;
-}
 
 @media (min-width: 768px) {
 
@@ -75,10 +70,6 @@
     .logo__nav {
         height: 30px;
     }
-
-    .btn__padrao {
-        width: 22rem;
-    }
 }
 
 @media (min-width: 992px) {
@@ -91,9 +82,6 @@
         width: 260px;
     }
     
-    .btn__padrao {
-        width: 23rem;
-    }
 
     .texto__inicial {
         display: none;

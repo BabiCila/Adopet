@@ -1,0 +1,80 @@
+
+.texto__home {
+    color: var(--azul-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+}
+
+.card__nome {
+    font-family: var(--fonte-principal);
+    color: var(--azul-principal);
+    font-weight: 600;
+}
+
+::placeholder {
+    color: var(--cinza-placeholder) !important;
+    font-size: 0.8rem;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+
+.btn__padrao,
+.btn__padrao_lg,
+.btn__padrao_index {
+    background-color: var(--goiaba-botao);
+    font-family: var(--fonte-principal);
+}
+
+.btn__padrao,
+.btn__padrao_index {
+    width: 12rem;
+}
+
+
+.btn__padrao_lg {
+    display: none;
+}
+
+.footer {
+    background-color: var(--verde-footer);
+    font-size: 1em;
+    padding: 3em 0;
+}
+
+.texto__rodape {
+    color: var(--branco-secundario);
+}
+
+@media (min-width: 768px) {
+    .btn__padrao {
+        width: 12rem;
+    }
+
+    .btn__padrao_index {
+        width: 14rem;
+    }
+
+    .texto__home {
+        font-size: 18px;
+    }
+
+    .card__nome {
+        font-size: 16px;
+        font-family: var(--fonte-principal);
+    }
+}
+
+@media (min-width: 992px) {
+    .btn__padrao {
+        width: 9rem;
+    }
+
+    .btn__padrao_lg {
+        display: inline-block;
+        width: 11rem;
+    }
+
+    .btn__padrao_index {
+        width: 25rem;
+    }
+}
