@@ -1,3 +1,4 @@
+@import url('/assets/css/variaveis.css');
 
 .texto__home {
     color: var(--azul-principal);
@@ -43,6 +44,12 @@
 
 .texto__rodape {
     color: var(--branco-secundario);
+}
+
+.text_msg {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-secundario);
+    font-size: 10px;
 }
 
 @media (min-width: 768px) {

@@ -38,32 +38,36 @@
           a pessoa ou instituição que está cuidando do animal:</h3>
       </div>
       <div class="align-self-center m-2 card__bg rounded mb-3 mb-md-5 d-flex flex-column" style="width: 18rem;">
-        <div class="m-3">
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label card__nome">Nome</label>
-            <input type="text" class="form-control shadow-sm" id="exampleFormControlInput1"
-              placeholder="Insira seu nome completo">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label card__nome">Telefone</label>
-            <input type="number" class="form-control shadow-sm" id="exampleFormControlInput1"
-              placeholder="Insira seu telefone e/ou whatsapp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label card__nome">Nome do animal</label>
-            <input type="text" class="form-control shadow-sm" id="exampleFormControlInput1"
-              placeholder="Por qual animal você se interessou?">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label card__nome">Mensagem</label>
-            <textarea class="form-control shadow-sm" id="exampleFormControlTextarea1"
-              placeholder="Escreva sua mensagem." rows="4"></textarea>
-          </div>
-          <div class="d-grid gap-2 col-8 col-md-5 col-lg-4 mx-auto mb-3">
-            <button type="button" class="btn text-light shadow mt-3 mb-md-5 mb-md-5 btn__padrao">Enviar</button>
-          </div>
-        </div>
+        <form class="m-3">
+            <div class="mb-3">
+              <label for="nome" class="form-label card__nome">Nome</label>
+              <input type="text" class="form-control shadow-sm" id="nome"
+                placeholder="Insira seu nome completo">
+              <small id="textNome" class="text_msg"></small>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label card__nome">Telefone</label>
+              <input type="text" class="form-control shadow-sm" id="telefone"
+                placeholder="Insira seu telefone e/ou whatsapp">
+              <small id="textTelefone" class="text_msg"></small>
+            </div>
+            <div class="mb-3">
+              <label for="nomeAnimal" class="form-label card__nome">Nome do animal</label>
+              <input type="text" class="form-control shadow-sm" id="nomeAnimal"
+                placeholder="Por qual animal você se interessou?">
+              <small id="textnomeAnimal" class="text_msg"></small>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label card__nome">Mensagem</label>
+              <textarea class="form-control shadow-sm" id="mensagem"
+                placeholder="Escreva sua mensagem." rows="4"></textarea>
+              <small id="textMensagem" class="text_msg"></small> 
+            </div>
+            <div class="d-grid gap-2 col-8 col-md-5 col-lg-4 mx-auto mb-3">
+              <button type="submit" class="btn text-light shadow mt-3 mb-md-5 mb-md-5 btn__padrao">Enviar</button>
+            </div>
+            <small id="textForm" class="text_msg"></small>
+        </form>
       </div>
     </main>
   </div>
@@ -72,6 +76,8 @@
       <span>2022 - Desenvolvido por Barbara Meira</span>
     </div>
   </footer>
+<script src="./assets/js/mensagem.js" type="module"></script>
+
 </body>
 
 </html>

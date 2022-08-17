@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/variaveis.css">
         <link rel="stylesheet" href="assets/css/style_acesso.css">
         <link rel="stylesheet" href="assets/css/style_componentes.css">
@@ -28,21 +29,29 @@
                 <img src="assets/img/logoazul.png" class="d-block mt-3 mb-5 m-auto pt-5 logo__azul">
                 <h3 class="texto__home p-3 mt-2 text-center">Já tem conta? Faça seu login:</h3>
                 
-                <div class="mt-1 mb-5 pb-5 d-flex flex-column align-items-center">
+                <form class="mt-1 mb-5 pb-5 d-flex flex-column align-items-center">
                     <div>
                         <h5 class="label text-center mt-3">E-mail</h5>
-                        <input type="email" class="form-control mb-4 shadow-sm form__cadastro" id="exampleFormControlInput1" placeholder="Escolha seu melhor e-mail">
+                        <input type="email" class="form-control shadow-sm form__cadastro" id="email" placeholder="Escolha seu melhor e-mail">
+                        <small id="textEmail" class="mb-4 text_msg"></small>
                     </div>       
                     <div>
-                        <h5 class="label text-center">Senha</h5>
-                        <input type="password" class="form-control  mb-4 shadow-sm input__senha" id="inputPassword" placeholder="Crie uma senha">  
+                        <h5 class="label text-center mt-4">Senha</h5>
+                        <div class="input-group position-relative">
+                            <input type="password" class="form-control  mb-4 shadow-sm input__senha" id="password" placeholder="Crie uma senha">  
+                            <i class="bi bi-eye eye position-absolute" id="open"></i>
+                            <i class="bi bi-eye-slash eye position-absolute" id="closed"></i>
+                        </div>
+                    <small id="textPassword" class="text_msg"></small>
                     </div>
+                    <small id="textForm" class="text_msg"></small>
                     <div class="d-grid gap-2 col-8 col-md-4 col-lg-3 mx-auto mb-5">
                         <a class="lembrar__senha text-center">Esqueci minha senha</a>
-                        <button type="button" class="btn btn__padrao text-light w-75 shadow ms-4 mt-3 mb-2 mb-md-5">Entrar</button>
-                        <button type="button" class="btn btn__padrao_lg text-light shadow ms-4 mt-3 mb-2 mb-md-5 ms-lg-5 me-lg-4">Entrar</button>
+                        <button type="submit" class="btn btn__padrao text-light w-75 shadow ms-4 mt-3 mb-2 mb-md-5">Entrar</button>
+                        <button type="submit" class="btn btn__padrao_lg text-light shadow ms-4 mt-3 mb-2 mb-md-5 ms-lg-5 me-lg-4">Entrar</button>
                     </div>  
-                </div>
+                    
+                </form>
             </main>
         </div>
         <footer class="footer">
@@ -50,5 +59,6 @@
                 <span>2022 - Desenvolvido por Barbara Meira</span>
             </div>     
         </footer>
+        <script src="./assets/js/login.js"></script>
     </body>
 </html>
