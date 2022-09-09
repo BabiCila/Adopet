@@ -1,15 +1,18 @@
-let form = document.querySelector('form');
-let email = document.getElementById('email');
-let password = document.getElementById('password');
-let pass_repeat = document.getElementById('pass_repeat')
-let textForm = document.getElementById('textForm');
-let textEmail = document.getElementById('textEmail');
-let textPassword = document.getElementById('textPassword');
-let textPassRepeat = document.getElementById('textPassRepeat');
-let closed = document.getElementById('closed');
-let open = document.getElementById('open');
-let closed_repeat = document.getElementById('closed_repeat');
-let open_repeat = document.getElementById('open_repeat');
+const form = document.querySelector('form');
+const nome = document.getElementById('nome')
+const cadastro = document.getElementById('cadastro');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const pass_repeat = document.getElementById('pass_repeat')
+const textForm = document.getElementById('textForm');
+const textEmail = document.getElementById('textEmail');
+const textPassword = document.getElementById('textPassword');
+const textPassRepeat = document.getElementById('textPassRepeat');
+const closed = document.getElementById('closed');
+const open = document.getElementById('open');
+const closed_repeat = document.getElementById('closed_repeat');
+const open_repeat = document.getElementById('open_repeat');
+const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []; 
 
 form.addEventListener('submit', (e) => {
 
@@ -37,8 +40,23 @@ form.addEventListener('submit', (e) => {
         textPassRepeat.textContent = "";
     } else {
         textForm.textContent = "Você precisa preeencher todos os campos";
-        console.log ("Requisição não atendida");
+
     }
+
+    const novoUsuario = {
+        "email" : email.value,
+        "nome": nome.value,
+        "password": password.value,
+    }
+
+    usuarios.push(novoUsuario)
+
+    localStorage.setItem("usuarios", JSON.stringify(usuarios))
+
+    email.value = "";
+    nome.value = "";
+    password.value = "";
+    pass_repeat.value = "";
 });
 
 email.addEventListener('keyup', () => {
@@ -130,5 +148,9 @@ function validaPass_Repeat (pass_repeat) {
     return pass_repeat.trim();
     }
     
+}
+
+function criaUsuario (usuario) {
+
 }
 
