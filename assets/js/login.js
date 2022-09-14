@@ -1,11 +1,12 @@
-let email = document.getElementById('email');
-let password = document.getElementById('password');
-let form = document.querySelector('form');
-let textForm = document.getElementById('textForm');
-let textEmail = document.getElementById('textEmail');
-let textPassword = document.getElementById('textPassword');
-let closed = document.getElementById('closed');
-let open = document.getElementById('open');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const form = document.querySelector('form');
+const textForm = document.getElementById('textForm');
+const textEmail = document.getElementById('textEmail');
+const textPassword = document.getElementById('textPassword');
+const closed = document.getElementById('closed');
+const open = document.getElementById('open');
+const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
 form.addEventListener('submit' , (e) => {
     e.preventDefault()
@@ -17,15 +18,30 @@ form.addEventListener('submit' , (e) => {
         validaEmail(email.value) === true &&
         validaPassword(password.value) === true
     ) {
-        console.log(email.value);
-        console.log(password.value);
         textForm.textContent = '';
         textEmail.textContent = '';
         textPassword.textContent = '';
+        
+        login(email.value, password.value)
     } else {
         console.log ("Requisição não atendida");
     }
+
 });
+
+function login(email, password) {
+    const usuarioCadastrado = usuarios.find(elemento => elemento.email === email)
+
+    if(usuarioCadastrado) {
+        if(usuarioCadastrado.password === password) {
+            window.location = "home.html"
+        } else {
+            textForm.textContent = "Password inválido"
+        }
+    } else {
+        textForm.textContent = "Email não encontrado"
+    }
+}
 
 email.addEventListener('keyup', () => {
     if(validaEmail(email.value) !== true) {
@@ -69,5 +85,13 @@ function validaPassword (password) {
 function validaEmail (email) {
     let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
     return emailPattern.test(email)
+}
+
+function verificaEmail (email) {
+    if (email.value === usuarios.email) {
+        return email
+    } else {
+        textEmail.textContent = 'Email digitado não confere.';
+    }
 }
 

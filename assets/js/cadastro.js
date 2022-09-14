@@ -150,7 +150,4 @@ function validaPass_Repeat (pass_repeat) {
     
 }
 
-function criaUsuario (usuario) {
-
-}
 
