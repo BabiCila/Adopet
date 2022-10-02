@@ -1,0 +1,76 @@
+{
+  "pets": [
+      {
+        "name": "Dunga",
+        "year": "2 anos",
+        "size": "Porte pequeno",
+        "characteristics": "Calmo e educado",
+        "location": "Rio de Janeiro (RJ)",
+        "imgUrl": "assets/img/img_animais/img-dunga.svg"
+      },
+      {
+        "name": "Felícia",
+        "year": "3 meses",
+        "size": "Porte pequeno",
+        "characteristics": "Ativa e carinhosa",
+        "location": "Nova Iguaçu (RJ)",
+        "imgUrl": "assets/img/img_animais/img-felicia.svg"
+      },
+      {
+        "name": "Sírius",
+        "year": "6 meses",
+        "size": "Porte grande",
+        "characteristics": "Ativo e educado",
+        "location": "Duque de Caxias (RJ)",
+        "imgUrl": "assets/img/img_animais/img-sirius.svg"
+      },
+      {
+        "name": "Fiona",
+        "year": "3 anos",
+        "size": "Porte pequeno",
+        "characteristics": "Calma e carinhosa",
+        "location": "São Gonçalo (RJ)",
+        "imgUrl": "assets/img/img_animais/img-fiona.svg"
+      },
+      {
+        "name": "Sid",
+        "year": "8 meses",
+        "size": "Porte médio/grande",
+        "characteristics": "Brincalhão e amável",
+        "location": "Rio de Janeiro (RJ)",
+        "imgUrl": "assets/img/img_animais/img-sid.svg"
+      },
+      {
+        "name": "Yoda",
+        "year": "1 ano",
+        "size": "Porte médio",
+        "characteristics": "Ativo e Carinhoso",
+        "location": "Nova Iguaçu (RJ)",
+        "imgUrl": "assets/img/img_animais/img-yoda.svg"
+      },
+      {
+        "name": "Lua",
+        "year": "8 meses",
+        "size": "Porte médio",
+        "characteristics": "Ativa e carinhosa",
+        "location": "Duque de Caxias (RJ)",
+        "imgUrl": "assets/img/img_animais/img-lua.svg"
+      },
+      {
+        "name": "Amora",
+        "year": "45 dias",
+        "size": "Porte grande",
+        "characteristics": "Calma e carinhosa",
+        "location": "São Gonçalo (RJ)",
+        "imgUrl": "assets/img/img_animais/img-amora.svg"
+      },
+      {
+        "name": "Zelda",
+        "year": "5 meses",
+        "size": "Porte médio",
+        "characteristics": "Ativa e amável",
+        "location": "Rio de Janeiro (RJ)",
+        "imgUrl": "assets/img/img_animais/img-zelda.svg"
+      }
+    ]
+}
